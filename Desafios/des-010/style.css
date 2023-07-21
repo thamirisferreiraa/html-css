@@ -43,20 +43,23 @@ a:hover{
     text-decoration: underline;
 }
 
-div{
+section{
     display: block;
 }
 
-div#normal{
+section.imagem01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: fixed;
+}
+ 
+p{
     font-family: var(--fonte3);
     font-size: larger;
     margin-left: 20px;
     padding-top: 20px;
-   
-}
-
-div#imagem{
-    background-image: url(imagens/background001.jpg);
-    background-position: right center;
 }
 
