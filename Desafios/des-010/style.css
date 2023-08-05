@@ -8,8 +8,17 @@
     --fonte3: 'Sriracha', cursive;
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+
 body{
-    margin:0px
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
 
 }
 
@@ -20,17 +29,15 @@ header{
 }
 
 header > h1{
+    font-variant: small-caps;
     font-family: var(--fonte2);
     font-size: 10vw;
     font-variant: small-caps;
     padding-top: 50px;
-    margin: 0px;
 }
 
 header > p{
-    font-family: var(--fonte1);
     padding-bottom: 50px;
-    padding-top: 0px;
 }
 
 a{
@@ -45,9 +52,21 @@ a:hover{
 
 section{
     display: block;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
-section.imagem01{
+section#imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+}
+
+section.img01{
     background-image: url(imagens/background001.jpg);
     background-position: right center;
     padding: 20px;
@@ -55,11 +74,40 @@ section.imagem01{
     background-attachment: fixed;
     background-size: fixed;
 }
+
+section.img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: fixed;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+p#fotinhas{
+    background-color: rgba(0, 0, 0, 0.432);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: -2px 0px 0px black;
+}
  
 p{
-    font-family: var(--fonte3);
-    font-size: larger;
-    margin-left: 20px;
-    padding-top: 20px;
+   padding-bottom: 2em;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 2em;
+}
+
+footer > p{
+    padding: 0px;
 }
 
